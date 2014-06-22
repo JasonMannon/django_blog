@@ -69,22 +69,22 @@ ROOT_URLCONF = 'microblog.urls'
 
 WSGI_APPLICATION = 'microblog.wsgi.application'
 
-MEDIA_ROOT = root("..", "uploads")
+MEDIA_ROOT = root("..", "..", "uploads")
 
 MEDIA_URL = ''
 
-STATIC_ROOT = root("..", "static")
+STATIC_ROOT = root("..", "..", "static")
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
 DATABASES = {'default' : dj_database_url.config() }
 
 STATIC_FILE_DIRS = (
-    root("assets")
+    root("..", "assets"),
 )
 
 TEMPLATE_DIRS = (
-    root("templates")
+    root("templates"),
 )
 # Internationalization
 # https://docs.djangoproject.com/en/1.6/topics/i18n/
