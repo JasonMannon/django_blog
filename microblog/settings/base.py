@@ -43,12 +43,18 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'south',
+    'blog',
 
 )
 
-THIRT_PARTY_APPS = ()
+THIRT_PARTY_APPS = (
+    'south',
+)
 
-LOCAL_APPS = ()
+LOCAL_APPS = (
+    'blog',
+)
 
 MIDDLEWARE_CLASSES = (
     'django.contrib.sessions.middleware.SessionMiddleware',
