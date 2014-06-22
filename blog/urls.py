@@ -7,6 +7,6 @@ urlpatterns = patterns('',
     # url(r'^$', 'microblog.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
     url(r"^$", views.PostListView.as_view(), name="list"),
-    url(r"^(?P<pk>\d+)/$", views.blog_detail, name="detail"),
+    url(r"^(?P<pk>\d+)/$", views.PostDetailView.as_view(), name="detail"),
 )
 
