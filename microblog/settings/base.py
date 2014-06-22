@@ -71,10 +71,7 @@ STATIC_ROOT = root("..", "static")
 # Database
 # https://docs.djangoproject.com/en/1.6/ref/settings/#databases
 
-DATABASES = {
-    'default': dj_database_url.config()
-    }
-
+DATABASES = {'default' : dj_database_url.config() }
 
 STATIC_FILE_DIRS = (
     root("assets")
